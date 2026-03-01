@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+*.log
+
+# C++ Build Tools (if any local builds happened)
+build/
+dist/
+*.spec
+
+# Application Specific
+config.json (sensitive/local only)
+models/whisper_model/
+
+# IDEs
+.vscode/
+.idea/
+
+# System
+.DS_Store
+Thumbs.db

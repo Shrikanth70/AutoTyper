@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoTyper Pro</title>
+    <style>
+        body {
+            width: 200px;
+            padding: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #1e1e1e;
+            color: white;
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .logo {
+            width: 24px;
+            height: 24px;
+            background: #0078d4;
+            border-radius: 4px;
+        }
+
+        h1 {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .status {
+            font-size: 12px;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #0078d4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background: #0086f0;
+        }
+
+        .shortcuts {
+            margin-top: 15px;
+            font-size: 11px;
+            color: #888;
+        }
+
+        .shortcut-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo"></div>
+        <h1>AutoTyper Pro</h1>
+    </div>
+    <div class="status">System: <span id="status-text" style="color: #4caf50;">Ready</span></div>
+
+    <button class="btn" id="force-stop">Emergency Stop</button>
+
+    <div class="shortcuts">
+        <div class="shortcut-item"><span>Clipboard</span> <span>Ctrl+Alt+V</span></div>
+        <div class="shortcut-item"><span>Voice</span> <span>Ctrl+Alt+S</span></div>
+        <div class="shortcut-item"><span>Stop</span> <span>Ctrl+Alt+X</span></div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

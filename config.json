@@ -1,0 +1,25 @@
+{
+    "hotkeys": {
+        "clipboard_mode": "ctrl+alt+v",
+        "voice_mode": "ctrl+alt+s",
+        "emergency_stop": "ctrl+alt+x"
+    },
+    "typing": {
+        "speed": 0.05,
+        "initial_delay": 0.5,
+        "human_like_delay": true,
+        "paste_mode": false
+    },
+    "voice": {
+        "model_size": "tiny",
+        "device": "cpu",
+        "compute_type": "int8",
+        "silence_timeout": 1.5
+    },
+    "startup": {
+        "enabled": false
+    },
+    "logging": {
+        "level": "INFO"
+    }
+}
