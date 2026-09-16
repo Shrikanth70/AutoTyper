@@ -1,8 +1,9 @@
 {
     "hotkeys": {
+        "copy_mode": "f8",
         "clipboard_mode": "ctrl+alt+v",
         "voice_mode": "ctrl+alt+s",
-        "emergency_stop": "ctrl+alt+x"
+        "emergency_stop": "f9"
     },
     "typing": {
         "speed": 0.05,

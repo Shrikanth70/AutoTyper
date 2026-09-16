@@ -127,6 +127,10 @@ async function handlePaste() {
     }
 }
 
+function handleCopy() {
+    document.execCommand("copy");
+}
+
 /**
  * Tab Visibility Stability
  */
@@ -141,5 +145,6 @@ document.addEventListener("visibilitychange", () => {
 window.AutoTyper = {
     startTyping,
     forceStop,
+    handleCopy,
     handlePaste
 };

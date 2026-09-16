@@ -4,20 +4,28 @@
  */
 
 const HOTKEYS = {
+    COPY: { key: 'f8' },
     CLIPBOARD: { ctrl: true, alt: true, key: 'v' },
     VOICE: { ctrl: true, alt: true, key: 's' },
-    STOP: { ctrl: true, alt: true, key: 'x' }
+    STOP: { key: 'f9' }
 };
 
 document.addEventListener('keydown', (e) => {
     // Emergency Stop
-    if (e.ctrlKey && e.altKey && e.key.toLowerCase() === HOTKEYS.STOP.key) {
+    if (e.key.toLowerCase() === HOTKEYS.STOP.key) {
         e.preventDefault();
         window.AutoTyper.forceStop();
         return;
     }
 
-    // Clipboard Trigger
+    // Copy selected text
+    if (e.key.toLowerCase() === HOTKEYS.COPY.key) {
+        e.preventDefault();
+        window.AutoTyper.handleCopy();
+        return;
+    }
+
+    // Clipboard typing trigger
     if (e.ctrlKey && e.altKey && e.key.toLowerCase() === HOTKEYS.CLIPBOARD.key) {
         e.preventDefault();
         window.AutoTyper.handlePaste();
